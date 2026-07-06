@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# Environment variables — never commit secrets
+backend/.env
+
+# SQLite database (auto-generated on startup)
+backend/*.db
+*.db
+
+# Accidentally generated files
+backend/package-lock.json
+backend/node_modules/
+
+# User-uploaded images (generated at runtime)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
